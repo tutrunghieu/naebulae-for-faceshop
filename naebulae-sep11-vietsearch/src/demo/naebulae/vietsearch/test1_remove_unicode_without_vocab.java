@@ -1,6 +1,6 @@
 package demo.naebulae.vietsearch;
 
-import apps.naebulae.vietsearch.VietUtils;
+import apps.naebulae.vietsearch.VietlangUtils;
 
 public class test1_remove_unicode_without_vocab {
 
@@ -9,7 +9,7 @@ public class test1_remove_unicode_without_vocab {
 		String s = "Trăm năm trong cõi người ta";
 		System.out.println("Before: " + s);
 		
-		s = VietUtils.detone(s);
+		s = VietlangUtils.detone(s);
 		System.out.println("After: " + s);
 	}
 
