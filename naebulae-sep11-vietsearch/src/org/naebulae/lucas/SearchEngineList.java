@@ -1,11 +1,11 @@
-package demo.naebulae.lucas;
+package org.naebulae.lucas;
 
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
 
-import apps.naebulae.jaccard.Jaccard;
-import apps.naebulae.vietsearch.VietlangUtils;
+import org.naebulae.jaccard.Jaccard;
+import org.naebulae.vietsearch.VietlangUtils;
 
 public class SearchEngineList<T> extends SearchEngine<String> {
 

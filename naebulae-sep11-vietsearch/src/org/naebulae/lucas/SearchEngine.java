@@ -1,4 +1,4 @@
-package demo.naebulae.lucas;
+package org.naebulae.lucas;
 
 import java.util.ArrayList;
 import java.util.Collection;

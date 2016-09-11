@@ -1,4 +1,4 @@
-package apps.naebulae.vietsearch;
+package org.naebulae.vietsearch;
 
 import java.io.BufferedReader;
 import java.io.File;

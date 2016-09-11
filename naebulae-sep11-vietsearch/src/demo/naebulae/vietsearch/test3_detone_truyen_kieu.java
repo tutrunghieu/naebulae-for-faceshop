@@ -6,7 +6,7 @@ import java.io.FileReader;
 import java.io.PrintWriter;
 import java.util.List;
 
-import apps.naebulae.vietsearch.VietlangUtils;
+import org.naebulae.vietsearch.VietlangUtils;
 
 public class test3_detone_truyen_kieu 
 {

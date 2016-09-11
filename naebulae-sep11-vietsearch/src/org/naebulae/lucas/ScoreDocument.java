@@ -1,4 +1,4 @@
-package demo.naebulae.lucas;
+package org.naebulae.lucas;
 
 public class ScoreDocument 
 {

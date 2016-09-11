@@ -1,6 +1,6 @@
 package demo.naebulae.vietsearch;
 
-import apps.naebulae.vietsearch.VietlangUtils;
+import org.naebulae.vietsearch.VietlangUtils;
 
 public class test1_remove_unicode_without_vocab {
 
