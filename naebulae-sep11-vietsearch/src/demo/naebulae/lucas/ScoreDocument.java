@@ -1,11 +1,11 @@
 package demo.naebulae.lucas;
 
-public class RetrievedDocument 
+public class ScoreDocument 
 {
 	public double score;
 	public Object document;
 
-	public RetrievedDocument(double sk, Object dk) 
+	public ScoreDocument(double sk, Object dk) 
 	{
 		score = sk;
 		document = dk;

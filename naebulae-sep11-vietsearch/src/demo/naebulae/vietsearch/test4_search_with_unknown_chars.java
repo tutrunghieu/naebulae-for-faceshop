@@ -3,7 +3,7 @@ package demo.naebulae.vietsearch;
 import java.util.List;
 
 import apps.naebulae.vietsearch.VietlangUtils;
-import demo.naebulae.lucas.RetrievedDocument;
+import demo.naebulae.lucas.ScoreDocument;
 import demo.naebulae.lucas.SearchEngineList;
 
 public class test4_search_with_unknown_chars 
@@ -22,7 +22,7 @@ public class test4_search_with_unknown_chars
 		
 		SearchEngineList<String> eng = new SearchEngineList<String>(docs);
 		
-		List<RetrievedDocument> items = eng.filterDocuments(q, 17);
+		List<ScoreDocument> items = eng.filterDocuments(q, 17);
 		eng.print(items);
 		
 		eng.clearBuffer();

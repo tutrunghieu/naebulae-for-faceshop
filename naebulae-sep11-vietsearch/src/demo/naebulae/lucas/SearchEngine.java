@@ -9,25 +9,25 @@ import java.util.TreeMap;
 
 public abstract class SearchEngine<T> 
 {
-	public List<RetrievedDocument> filterDocuments(T q, int kpar) 
+	public List<ScoreDocument> filterDocuments(T q, int kpar) 
 	{
 		if(kpar < 0) kpar = Integer.MAX_VALUE; 
 		
-		Map<Double, List<RetrievedDocument>> G = new TreeMap<Double, List<RetrievedDocument>>(Collections.reverseOrder());
+		Map<Double, List<ScoreDocument>> G = new TreeMap<Double, List<ScoreDocument>>(Collections.reverseOrder());
 		
 		for(T dk: fetchStockedDocuments())
 		{
 			double sk = similarScore(q, dk);
 			
-			List<RetrievedDocument> lk = G.get(sk);
-			if(lk == null) G.put(sk, lk = new ArrayList<RetrievedDocument>());
+			List<ScoreDocument> lk = G.get(sk);
+			if(lk == null) G.put(sk, lk = new ArrayList<ScoreDocument>());
 			
-			lk.add(new RetrievedDocument(sk, dk));
+			lk.add(new ScoreDocument(sk, dk));
 		}
 		
-		List<RetrievedDocument> res = new ArrayList<RetrievedDocument>();
+		List<ScoreDocument> res = new ArrayList<ScoreDocument>();
 		for(Double sk: G.keySet())
-		for(RetrievedDocument dj: G.get(sk))
+		for(ScoreDocument dj: G.get(sk))
 		{
 			res.add(dj);
 			if(res.size() >= kpar) break;
@@ -40,9 +40,9 @@ public abstract class SearchEngine<T>
 
 	public abstract Collection<T> fetchStockedDocuments();
 
-	public void print(List<RetrievedDocument> items) 
+	public void print(List<ScoreDocument> items) 
 	{
-		for(RetrievedDocument ik: items)
+		for(ScoreDocument ik: items)
 		{
 			System.out.println(ik.score + ": " + ik.document);
 		}		
