@@ -13,7 +13,7 @@ public class test3_simple_filtering
 	public static void main(String[] args)
 	throws Exception
 	{
-		String q = "Ngh?a ?ô Ph? gà";
+		String q = "Ngh?a ?ô gà Ph? ";
 		
 		List<Document> docs = MongoUtils.listDocuments("tab-franchise-menu-item", "cabine-101");
 		System.out.println(docs.size());
