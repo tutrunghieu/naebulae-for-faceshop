@@ -14,7 +14,6 @@ import org.bson.Document;
 import org.codehaus.jackson.map.ObjectMapper;
 
 import com.mongodb.MongoClient;
-import com.mongodb.client.FindIterable;
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoDatabase;
 

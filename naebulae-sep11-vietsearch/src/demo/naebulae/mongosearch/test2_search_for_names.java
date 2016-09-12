@@ -1,6 +1,5 @@
 package demo.naebulae.mongosearch;
 
-import java.util.Collection;
 import java.util.List;
 
 import org.bson.Document;

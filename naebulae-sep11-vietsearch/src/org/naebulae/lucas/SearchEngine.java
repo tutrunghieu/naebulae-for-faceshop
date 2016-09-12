@@ -7,8 +7,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import org.bson.Document;
-
 import com.mongodb.client.FindIterable;
 
 public abstract class SearchEngine<T> 
