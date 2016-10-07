@@ -1,5 +1,8 @@
 package gapp.xorcos;
 
+import org.naebulae.catseq.Catseq;
+import org.naebulae.catseq.Sampler;
+
 public class System2 {
 
 	public static final boolean IGNORE_THIS_BLOCK = false;
@@ -57,5 +60,9 @@ public class System2 {
 	public static Double getDouble(Object[] x, int k) 
 	{
 		return (Double)x[k];
+	}
+
+	public static void consume(Object g1)
+	{	
 	}
 }
