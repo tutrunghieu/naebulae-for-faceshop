@@ -26,4 +26,16 @@ public class System2 {
 		return res;
 	}
 
+	public static String joinObjects(String cm, Object... args)
+	{
+		String res = "";
+		
+		for(int k=0; k<args.length; k++)
+		{
+			if(k>0) res += cm;
+			res += args[k];
+		}
+				
+		return res;
+	}
 }

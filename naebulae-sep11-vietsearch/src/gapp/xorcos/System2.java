@@ -53,4 +53,9 @@ public class System2 {
 		
 		System.out.println();
 	}
+
+	public static Double getDouble(Object[] x, int k) 
+	{
+		return (Double)x[k];
+	}
 }
