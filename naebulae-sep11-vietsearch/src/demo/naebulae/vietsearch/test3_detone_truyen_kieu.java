@@ -1,8 +1,5 @@
 package demo.naebulae.vietsearch;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.PrintWriter;
 import java.util.List;
 
@@ -30,8 +27,11 @@ public class test3_detone_truyen_kieu
 			out.println(s);
 			
 			String[] words = s.trim().split("\\s+");
-			if(words.length != 6 && words.length != 8) 
-				throw new Exception("Invalid verse");
+			if(words.length != 6 && words.length != 8)  
+			{
+				System.out.println("Invalid verse");
+				break;
+			}
 			
 			cnt++;
 		}
