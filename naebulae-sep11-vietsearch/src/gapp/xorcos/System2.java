@@ -62,7 +62,7 @@ public class System2 {
 		return (Double)x[k];
 	}
 
-	public static void consume(Object g1)
+	public static void consume(Object... obj)
 	{	
 	}
 }

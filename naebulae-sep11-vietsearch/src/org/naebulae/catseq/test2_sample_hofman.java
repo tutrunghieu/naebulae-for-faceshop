@@ -8,7 +8,7 @@ public class test2_sample_hofman {
 
 	public static void main(String[] args)
 	{
-		Sampler<Catseq> g1 = new SamplerHofman();
+		Sampler<Catseq> g1 = new SamplerHofman(10, 20);
 		System2.consume(g1);
 		
 		SamplerHofman g = new SamplerHofman(100, 200);
