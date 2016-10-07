@@ -18,7 +18,7 @@ public class test_catseq_lovehate2 {
 				"we love her more than we can say"
 		};
 
-		SamplerShannonMachine2 eng = new SamplerShannonMachine2(corpus, 2);
+		SamplerShannonMachine2 eng = new SamplerShannonMachine2(corpus, 1);
 		
 		
 		for(Catseq sk: eng.nextObjectList(1000)) 

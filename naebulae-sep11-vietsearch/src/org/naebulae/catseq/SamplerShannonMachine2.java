@@ -9,7 +9,7 @@ public class SamplerShannonMachine2 extends Sampler<Catseq>
 {
 		protected int kpar;
 		
-		protected Map<String, Map<String, Double>> mat;
+		protected Map<String[], Map<String, Double>> mat;
 		
 		public SamplerShannonMachine2(String[] corpus, int k)
 		{
@@ -28,7 +28,7 @@ public class SamplerShannonMachine2 extends Sampler<Catseq>
 		@Override
 		public Object nextSequenceCategory(int k, Object pref) 
 		{
-			String last = (String)pref;
+			String[] last = (String[])pref;
 			
 			Map<String, Double> m = mat.get(last);
 			if(m==null) return null;
@@ -45,7 +45,7 @@ public class SamplerShannonMachine2 extends Sampler<Catseq>
 			{
 //				System.out.println("Sampling " + k);
 				
-				String pref = System2.join( CorpusUtils.getLast(res.getListObject(), kpar) );
+				String[] pref = CorpusUtils.getLast(res.getListObject(), kpar);
 				Object vk = nextSequenceCategory(k, pref);
 				if(vk == null) break;
 				res.add(vk);

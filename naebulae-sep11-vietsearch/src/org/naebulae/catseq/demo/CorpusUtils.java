@@ -4,14 +4,15 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.TreeMap;
 
 import org.naebulae.test_md5_sha1_sha256.System2;
 
 public class CorpusUtils 
 {
-	public static Map<String, Map<String, Double>> buildLangModel2(String[] corpus, int kpar) 
+	public static Map<String[], Map<String, Double>> buildLangModel2(String[] corpus, int kpar) 
 	{
-		Map<String, Map<String, Double>> res = new LinkedHashMap<String, Map<String, Double>>();
+		Map<String[], Map<String, Double>> res = new TreeMap<String[], Map<String, Double>>(new ComparatorForStringArray());
 		
 		for(String ck: corpus)
 		{
@@ -19,14 +20,14 @@ public class CorpusUtils
 			addLine2(res, ck.split("\\s+"), kpar);			
 		}
 		
-		return normalize(res);
+		return normalize2(res);
 	}
 	
-	private static void addLine2(Map<String, Map<String, Double>> res, String[] words, int kpar) 
+	private static void addLine2(Map<String[], Map<String, Double>> res, String[] words, int kpar) 
 	{
 		for(int k=0; k<words.length; k++)
 		{
-			String pk = System2.join( getLast(words, k, kpar) );
+			String[] pk = getLast(words, k, kpar);
 			String wk = words[k];
 			
 			Map<String, Double> mk = res.get(pk);
@@ -149,10 +150,10 @@ public class CorpusUtils
 		return res.toArray(new String[] {});		
 	}
 
-	public static void printLangModel(Map<String, Map<String, Double>> mat) 
+	public static void printLangModel(Map<String[], Map<String, Double>> mat) 
 	{
 		
-		for(String mk: mat.keySet())
+		for(String[] mk: mat.keySet())
 		{
 			System.out.println("============= " + System2.join(mk) );
 			System.out.println(mat.get(mk));
