@@ -13,6 +13,16 @@ public class Catseq
 	{
 		symbols.add(cat);
 	}
+	
+	public Object get(int k) 
+	{
+		return symbols.get(k);
+	}
+	
+	public int size() 
+	{
+		return symbols.size();
+	}
 
 	public String getSymbolString() 
 	{
@@ -43,5 +53,21 @@ public class Catseq
 		
 		return res;
 	}
+
+	public String[] last(int kpar) 
+	{
+		List<String> res = new ArrayList<String>();
+		
+		int l=Math.max(0, symbols.size()-kpar);
+		int r=Math.min(symbols.size(), l+kpar);
+		
+		for(int tt=l; tt<r; tt++)
+		{
+			res.add(symbols.get(tt).toString());
+		}
+		
+		return res.toArray(new String[] {});
+	}
+
 
 }

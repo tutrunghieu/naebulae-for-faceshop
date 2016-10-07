@@ -13,4 +13,17 @@ public class System2 {
 //		return Math.exp(1.1);	
 	}
 
+	public static String join(String... args)
+	{
+		String res = "";
+		
+		for(int k=0; k<args.length; k++)
+		{
+			if(k>0) res += " ";
+			res += args[k];
+		}
+				
+		return res;
+	}
+
 }
