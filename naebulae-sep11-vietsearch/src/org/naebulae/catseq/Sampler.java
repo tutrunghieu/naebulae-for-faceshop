@@ -23,11 +23,14 @@ public abstract class Sampler<T>
 
 	public double nextDouble()
 	{
-		return coin197.nextDouble();
+		return Math.random();
 	}
 	
 	
-	public abstract T nextObject();
+	public T nextObject()
+	{
+		return null;
+	}
 	
 	public int nextInteger(int len)
 	{

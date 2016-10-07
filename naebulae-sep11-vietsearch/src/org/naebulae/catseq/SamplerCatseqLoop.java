@@ -2,6 +2,8 @@ package org.naebulae.catseq;
 
 import java.util.Map;
 
+import org.naebulae.util.Map2;
+
 public class SamplerCatseqLoop extends Sampler<Catseq> 
 {
 	

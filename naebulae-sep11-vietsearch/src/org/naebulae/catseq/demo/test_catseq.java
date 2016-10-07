@@ -1,4 +1,6 @@
-package org.naebulae.catseq;
+package org.naebulae.catseq.demo;
+
+import org.naebulae.catseq.Catseq;
 
 public class test_catseq {
 

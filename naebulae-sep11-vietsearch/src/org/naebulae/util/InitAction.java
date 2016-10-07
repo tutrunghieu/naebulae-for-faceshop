@@ -1,4 +1,4 @@
-package org.naebulae.catseq;
+package org.naebulae.util;
 
 public interface InitAction<T> 
 {
