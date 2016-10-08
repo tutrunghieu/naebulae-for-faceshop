@@ -3,7 +3,7 @@ package demo.naebulae.vietsearch;
 import java.util.Map;
 import java.util.TreeMap;
 
-import org.naebulae.lucas.VietlangUtils;
+import org.naebulae.nlp.vietlang.VietlangUtils;
 
 public class test2_remove_unicode_with_vocab {
 

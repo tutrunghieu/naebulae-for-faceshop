@@ -3,9 +3,9 @@ package demo.naebulae.mongosearch;
 import java.util.List;
 
 import org.bson.Document;
-import org.naebulae.lucas.ScoreDocument;
-import org.naebulae.mongo.MongoPortal;
-import org.naebulae.mongo.MongoUtils;
+import org.naebulae.nlp.lucas.ScoreDocument;
+import org.naebulae.util.mongo.MongoPortal;
+import org.naebulae.util.mongo.MongoUtils;
 
 import com.mongodb.client.FindIterable;
 

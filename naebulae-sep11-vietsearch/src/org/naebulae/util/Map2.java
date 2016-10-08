@@ -4,7 +4,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.TreeMap;
 
-import org.naebulae.catseq.CategoricalVocab;
+import org.naebulae.mc2.catseq.CategoricalVocab;
 
 public class Map2 
 {

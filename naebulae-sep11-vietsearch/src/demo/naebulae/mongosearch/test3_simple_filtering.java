@@ -3,10 +3,10 @@ package demo.naebulae.mongosearch;
 import java.util.List;
 
 import org.bson.Document;
-import org.naebulae.lucas.ScoreDocument;
-import org.naebulae.lucas.ScoringFuncStringDoc;
-import org.naebulae.lucas.SearchUtils;
-import org.naebulae.mongo.MongoUtils;
+import org.naebulae.nlp.lucas.ScoreDocument;
+import org.naebulae.nlp.lucas.ScoringFuncStringDoc;
+import org.naebulae.nlp.lucas.SearchUtils;
+import org.naebulae.util.mongo.MongoUtils;
 
 public class test3_simple_filtering 
 {

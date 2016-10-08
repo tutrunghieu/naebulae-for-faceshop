@@ -2,9 +2,9 @@ package demo.naebulae.vietsearch;
 
 import java.util.List;
 
-import org.naebulae.lucas.ScoreDocument;
-import org.naebulae.lucas.SearchEngineList;
-import org.naebulae.lucas.VietlangUtils;
+import org.naebulae.nlp.lucas.ScoreDocument;
+import org.naebulae.nlp.lucas.SearchEngineList;
+import org.naebulae.nlp.vietlang.VietlangUtils;
 
 public class test4_search_with_unknown_chars 
 {

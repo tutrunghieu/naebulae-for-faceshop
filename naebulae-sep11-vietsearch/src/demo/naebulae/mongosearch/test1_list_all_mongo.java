@@ -1,7 +1,7 @@
 package demo.naebulae.mongosearch;
 
-import org.naebulae.mongo.MongoPortal;
-import org.naebulae.mongo.MongoUtils;
+import org.naebulae.util.mongo.MongoPortal;
+import org.naebulae.util.mongo.MongoUtils;
 
 public class test1_list_all_mongo 
 {
