@@ -1,4 +1,4 @@
-package gapp.xorcos;
+package org.naebulae.util;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

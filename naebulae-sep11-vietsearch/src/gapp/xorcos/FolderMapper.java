@@ -2,6 +2,8 @@ package gapp.xorcos;
 
 import java.io.File;
 
+import org.naebulae.util.Date2;
+
 public class FolderMapper {
 
 	private File dataFolder;

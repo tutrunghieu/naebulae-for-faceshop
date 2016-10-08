@@ -1,4 +1,4 @@
-package gapp.xorcos;
+package gapp.xorcos.stat;
 
 import java.util.ArrayList;
 import java.util.List;

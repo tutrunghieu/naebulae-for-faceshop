@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.naebulae.util.System2;
 
+import gapp.xorcos.stat.Meanvar;
+
 @SuppressWarnings("unused")
 public class test1_uniform_sampler 
 {

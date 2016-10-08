@@ -4,6 +4,9 @@ import java.util.List;
 
 import org.naebulae.util.System2;
 
+import gapp.xorcos.stat.Meanvar;
+import gapp.xorcos.stat.StatisticalFactor;
+
 @SuppressWarnings("unused")
 public class test2_generate_xor 
 {
