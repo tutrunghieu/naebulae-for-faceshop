@@ -1,4 +1,4 @@
-package gapp.kn_search;
+package org.naebulae.util;
 
 import java.util.ArrayList;
 import java.util.List;

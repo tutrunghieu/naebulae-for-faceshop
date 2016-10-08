@@ -2,6 +2,8 @@ package gapp.kn_search;
 
 import java.util.List;
 
+import org.naebulae.util.List2;
+
 public class test2_seach_over_files 
 {
 	public static void main(String[] args) 

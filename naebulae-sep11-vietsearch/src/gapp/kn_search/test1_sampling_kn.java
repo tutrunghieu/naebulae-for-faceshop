@@ -2,6 +2,8 @@ package gapp.kn_search;
 
 import java.util.List;
 
+import org.naebulae.util.List2;
+
 public class test1_sampling_kn 
 {
 	public static void main(String[] args) 

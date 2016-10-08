@@ -3,7 +3,7 @@ package demo.naebulae.vietsearch;
 import java.io.PrintWriter;
 import java.util.List;
 
-import org.naebulae.vietsearch.VietlangUtils;
+import org.naebulae.lucas.VietlangUtils;
 
 public class test3_detone_truyen_kieu 
 {

@@ -6,10 +6,10 @@ import java.util.List;
 import java.util.Map;
 
 import org.bson.Document;
-import org.naebulae.jaccard.Jaccard;
+import org.naebulae.lucas.Jaccard;
 import org.naebulae.lucas.SearchEngine;
+import org.naebulae.lucas.VietlangUtils;
 import org.naebulae.mongo.MongoPortal;
-import org.naebulae.vietsearch.VietlangUtils;
 
 public class SearchEngineMongo<T> extends SearchEngine<Document> 
 {

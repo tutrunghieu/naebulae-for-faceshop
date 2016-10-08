@@ -4,7 +4,7 @@ import org.naebulae.catseq.Catseq;
 import org.naebulae.catseq.Sampler;
 import org.naebulae.catseq.SamplerCatseqLoop;
 import org.naebulae.catseq.SamplerShannonMachine;
-import org.naebulae.test_md5_sha1_sha256.System2;
+import org.naebulae.util.System2;
 
 public class test_catseq_sampler 
 {

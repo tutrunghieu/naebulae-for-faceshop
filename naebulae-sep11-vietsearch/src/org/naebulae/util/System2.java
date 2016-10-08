@@ -1,16 +1,9 @@
-package gapp.xorcos;
+package org.naebulae.util;
 
-import org.naebulae.catseq.Catseq;
-import org.naebulae.catseq.Sampler;
-
-public class System2 {
+public class System2
+{
 
 	public static final boolean IGNORE_THIS_BLOCK = false;
-
-	public static void theEnd() 
-	{
-		System.out.println("-----------THE END-------------");
-	}
 
 	public static void hr(Object name) 
 	{
@@ -64,5 +57,42 @@ public class System2 {
 
 	public static void consume(Object... obj)
 	{	
+	}	
+
+	public static void theEnd() 
+	{
+		System.out.println("------------THE END--------------");
+		
+	}
+
+	public static void nop(Object src)
+	{
+//		return Math.exp(1.1);	
+	}
+
+	public static String join(String... args)
+	{
+		String res = "";
+		
+		for(int k=0; k<args.length; k++)
+		{
+			if(k>0) res += " ";
+			res += args[k];
+		}
+				
+		return res;
+	}
+
+	public static String joinObjects(String cm, Object... args)
+	{
+		String res = "";
+		
+		for(int k=0; k<args.length; k++)
+		{
+			if(k>0) res += cm;
+			res += args[k];
+		}
+				
+		return res;
 	}
 }

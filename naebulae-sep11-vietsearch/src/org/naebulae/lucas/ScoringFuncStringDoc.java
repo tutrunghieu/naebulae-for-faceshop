@@ -3,8 +3,6 @@ package org.naebulae.lucas;
 import java.util.Map;
 
 import org.bson.Document;
-import org.naebulae.jaccard.Jaccard;
-import org.naebulae.vietsearch.VietlangUtils;
 
 public class ScoringFuncStringDoc implements ScoringFunc 
 {

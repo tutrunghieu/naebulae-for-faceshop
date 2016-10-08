@@ -2,6 +2,8 @@ package org.naebulae.test_md5_sha1_sha256;
 
 import java.io.PrintWriter;
 
+import org.naebulae.util.System2;
+
 public class comparing_methods 
 {
 

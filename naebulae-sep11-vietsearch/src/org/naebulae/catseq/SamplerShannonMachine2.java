@@ -3,7 +3,7 @@ package org.naebulae.catseq;
 import java.util.Map;
 
 import org.naebulae.catseq.demo.CorpusUtils;
-import org.naebulae.test_md5_sha1_sha256.System2;
+import org.naebulae.util.System2;
 
 public class SamplerShannonMachine2 extends Sampler<Catseq> 
 {

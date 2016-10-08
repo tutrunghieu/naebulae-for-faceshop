@@ -1,8 +1,7 @@
 package org.naebulae.catseq;
 
 import org.naebulae.util.Map2;
-
-import gapp.xorcos.System2;
+import org.naebulae.util.System2;
 
 public class test3_sample_markov {
 

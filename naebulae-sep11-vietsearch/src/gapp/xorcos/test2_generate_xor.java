@@ -2,6 +2,8 @@ package gapp.xorcos;
 
 import java.util.List;
 
+import org.naebulae.util.System2;
+
 @SuppressWarnings("unused")
 public class test2_generate_xor 
 {

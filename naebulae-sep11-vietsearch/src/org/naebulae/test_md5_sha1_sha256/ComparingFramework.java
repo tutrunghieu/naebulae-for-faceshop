@@ -4,6 +4,9 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.naebulae.util.Joiner;
+import org.naebulae.util.System2;
+
 public class ComparingFramework<S, T>
 {
 	public PrintWriter out;

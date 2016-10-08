@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.naebulae.lucas.ScoreDocument;
 import org.naebulae.lucas.SearchEngineList;
-import org.naebulae.vietsearch.VietlangUtils;
+import org.naebulae.lucas.VietlangUtils;
 
 public class test4_search_with_unknown_chars 
 {

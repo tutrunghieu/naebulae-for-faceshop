@@ -5,8 +5,8 @@ import java.io.PrintWriter;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-import org.naebulae.test_md5_sha1_sha256.System2;
 import org.naebulae.util.InitAction;
+import org.naebulae.util.System2;
 
 public class TableGenetator {
 

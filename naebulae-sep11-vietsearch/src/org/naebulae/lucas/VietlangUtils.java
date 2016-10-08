@@ -1,4 +1,4 @@
-package org.naebulae.vietsearch;
+package org.naebulae.lucas;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -70,7 +70,7 @@ public class VietlangUtils
 
 	public static String removePunctuators(String s) 
 	{
-		return s.replaceAll("[,.!?:;'\"“”]+", "");
+		return s.replaceAll("[,.!?:;'\"ï¿½ï¿½]+", "");
 	}
 
 

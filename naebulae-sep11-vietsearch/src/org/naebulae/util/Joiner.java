@@ -1,4 +1,4 @@
-package org.naebulae.test_md5_sha1_sha256;
+package org.naebulae.util;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;

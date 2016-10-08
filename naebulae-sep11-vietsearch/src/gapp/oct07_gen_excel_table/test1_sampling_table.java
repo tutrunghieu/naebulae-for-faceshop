@@ -2,7 +2,7 @@ package gapp.oct07_gen_excel_table;
 
 import java.io.File;
 
-import gapp.xorcos.System2;
+import org.naebulae.util.System2;
 
 public class test1_sampling_table {
 

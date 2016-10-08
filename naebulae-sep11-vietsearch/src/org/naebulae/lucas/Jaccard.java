@@ -1,4 +1,4 @@
-package org.naebulae.jaccard;
+package org.naebulae.lucas;
 
 import java.util.Map;
 import java.util.Set;
