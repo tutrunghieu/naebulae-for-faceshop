@@ -3,23 +3,35 @@ package org.naebulae.mc2.vector;
 import java.util.ArrayList;
 import java.util.List;
 
-public class McVectorGenerator extends Sampler1970
+public class SaltonSampler extends Sampler1970
 {
-	protected List<CategoricalDist> vocab = new ArrayList<CategoricalDist>();
+	protected int len1;
+	protected int len2;
 	
-	public void add(CategoricalDist v) 
+	protected List<UniformVocab> items = new ArrayList<UniformVocab>(); 
+	
+	public SaltonSampler(int a, int b) 
 	{
-		vocab.add(v);
+		len1 = a;
+		len2 = b;
 	}
-	
+		
+	public void add(UniformVocab Vj) 
+	{
+		items.add(Vj);
+	}
+		
+
+
 	public int nextVectorLen()
 	{
-		return vocab.size();
+		double t = Math.random();
+		return (int)(t*len1 + (1-t)*len2);
 	}
 	
 	public CategoricalDist nextCategoricalDist(int k) 
 	{
-		return vocab.get(k);
+		return takeOne(items);		
 	}	
 
 	public<T> McString<T> nextVectorUniform(Class<T> cl) 
