@@ -5,9 +5,9 @@ import java.util.List;
 
 public class McVectorGenerator extends Sampler1970
 {
-	protected List<CategoricalDist> vocab = new ArrayList<CategoricalDist>();
+	protected List<CatDist> vocab = new ArrayList<CatDist>();
 	
-	public void add(CategoricalDist v) 
+	public void add(CatDist v) 
 	{
 		vocab.add(v);
 	}
@@ -17,7 +17,7 @@ public class McVectorGenerator extends Sampler1970
 		return vocab.size();
 	}
 	
-	public CategoricalDist nextCategoricalDist(int k) 
+	public CatDist nextCategoricalDist(int k) 
 	{
 		return vocab.get(k);
 	}	
@@ -29,7 +29,7 @@ public class McVectorGenerator extends Sampler1970
 		
 		for(int n=nextVectorLen(), k=0; k<n; k++)
 		{
-			CategoricalDist pk = nextCategoricalDist(k);
+			CatDist pk = nextCategoricalDist(k);
 			T wk = cl.cast( pk.nextCategory() );
 			res.add(wk);
 		}

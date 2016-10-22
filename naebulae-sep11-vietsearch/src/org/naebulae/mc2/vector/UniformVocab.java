@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class UniformVocab implements CategoricalDist 
+public class UniformVocab implements CatDist 
 {
 	protected List<String> items = new ArrayList<String>();
 	

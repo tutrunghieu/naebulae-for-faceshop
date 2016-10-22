@@ -10,8 +10,8 @@ public class ShannonSampler
 	protected int len1;
 	protected int len2;
 	
-	protected Map<Object[], CategoricalDist> items 
-		= new TreeMap<Object[], CategoricalDist>(new ObjectComparator()); 
+	protected Map<Object[], CatDist> items 
+		= new TreeMap<Object[], CatDist>(new ObjectComparator()); 
 	
 	public ShannonSampler(int a, int b) 
 	{
@@ -19,7 +19,7 @@ public class ShannonSampler
 		len2 = b;
 	}
 		
-	public void add(Object[] cj, CategoricalDist Vj) 
+	public void add(Object[] cj, CatDist Vj) 
 	{
 		items.put(cj, Vj);
 	}
@@ -31,7 +31,7 @@ public class ShannonSampler
 		return (int)(t*len1 + (1-t)*len2);
 	}
 	
-	public CategoricalDist nextCategoricalDist(Object[] arg) 
+	public CatDist nextCategoricalDist(Object[] arg) 
 	{
 		return items.get(arg);		
 	}	
@@ -48,7 +48,7 @@ public class ShannonSampler
 			System.out.println("----" + k);
 			System.out.println("ctx " + cur);
 			
-			CategoricalDist pk = nextCategoricalDist(cur.toArray());
+			CatDist pk = nextCategoricalDist(cur.toArray());
 			System.out.println("dist " + pk);
 			if(pk==null) break;
 

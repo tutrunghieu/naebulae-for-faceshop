@@ -29,7 +29,7 @@ public class SaltonSampler extends Sampler1970
 		return (int)(t*len1 + (1-t)*len2);
 	}
 	
-	public CategoricalDist nextCategoricalDist(int k) 
+	public CatDist nextCategoricalDist(int k) 
 	{
 		return takeOne(items);		
 	}	
@@ -41,7 +41,7 @@ public class SaltonSampler extends Sampler1970
 		
 		for(int n=nextVectorLen(), k=0; k<n; k++)
 		{
-			CategoricalDist pk = nextCategoricalDist(k);
+			CatDist pk = nextCategoricalDist(k);
 			T wk = cl.cast( pk.nextCategory() );
 			res.add(wk);
 		}
