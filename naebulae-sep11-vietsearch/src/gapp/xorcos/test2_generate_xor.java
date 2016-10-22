@@ -39,8 +39,8 @@ public class test2_generate_xor
 		for(StatisticalFactor fj: fields)
 		{
 			System2.hr("X" + fj.number);
-			System2.nv("min", fj.min());
-			System2.nv("max", fj.min());
+			System2.nv("min", fj.lower());
+			System2.nv("max", fj.lower());
 			System2.nv("avg", fj.avg());
 		}
 		

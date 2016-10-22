@@ -1,0 +1,5 @@
+package org.naebulae.mc2.vector;
+
+public class Uniform {
+
+}

@@ -5,8 +5,8 @@ import java.util.List;
 
 public class StatisticalFactor 
 {
-	public Double minVal;
-	public Double maxVal;
+	public Double minVal = Double.MAX_VALUE;
+	public Double maxVal = -Double.MAX_VALUE;
 	
 	public int number;
 	public List<Double> values = new ArrayList<Double>();
@@ -14,31 +14,17 @@ public class StatisticalFactor
 	public void add(double d) 
 	{
 		values.add(d);
+		minVal = Math.min(minVal, d);
+		maxVal = Math.max(maxVal, d);
 	}
 
-	public Double min() 
+	public Double lower() 
 	{
-		if(minVal!=null) return minVal;
-	
-		for(Double vk: values)
-		{
-			if(minVal == null) minVal = vk;
-			else minVal = Math.min(minVal, vk);
-		}
-		
 		return minVal;
 	}
 
-	public Double max() 
+	public Double upper() 
 	{
-		if(maxVal!=null) return maxVal;
-	
-		for(Double vk: values)
-		{
-			if(maxVal == null) maxVal = vk;
-			else maxVal = Math.max(maxVal, vk);
-		}
-		
 		return maxVal;
 	}
 
@@ -49,5 +35,11 @@ public class StatisticalFactor
 		
 		int n = values.size();
 		return s /( n==0 ? 1 : n);
+	}
+
+	public void print() 
+	{
+		System.out.println("lower=" + lower());
+		System.out.println("upper=" + upper());
 	}
 }

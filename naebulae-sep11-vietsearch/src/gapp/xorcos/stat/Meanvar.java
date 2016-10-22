@@ -51,4 +51,31 @@ public class Meanvar {
 		return res.get(j);
 	}
 
+	public static StatisticalFactor rangeListDouble(List<Object> x) 
+	{
+		StatisticalFactor res = new StatisticalFactor();
+		res.maxVal = -Double.MAX_VALUE;
+		res.minVal = Double.MAX_VALUE;
+		
+		for(Object xk: x)
+		{
+			double vk = (Double)xk;
+			res.add(vk);
+		}
+
+		return res;
+	}
+
+	public static int count(List<Object> x, WhereFunc lf) 
+	{
+		int c = 0;
+		for(Object xk: x)
+		{
+			boolean vk = lf.invokeWhereAction(xk);
+			if(vk) c++;
+		}
+
+		return c;
+	}
+
 }
