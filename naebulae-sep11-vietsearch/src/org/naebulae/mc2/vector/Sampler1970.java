@@ -16,6 +16,13 @@ public class Sampler1970
 		return items.get(k);
 	}
 
+	
+	public<T> T takeOne(T[] items)
+	{
+		int k = (int)(nextBaseDouble()*items.length);
+		return items[k];
+	}
+	
 	public static<T1> List<T1> nextList(int n, RandAction<T1> lf) 
 	{
 		List<T1> res = new ArrayList<T1>();
