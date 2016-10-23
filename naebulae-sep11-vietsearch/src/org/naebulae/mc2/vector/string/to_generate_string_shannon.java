@@ -1,5 +1,8 @@
-package org.naebulae.mc2.vector;
+package org.naebulae.mc2.vector.string;
 
+import org.naebulae.mc2.vector.CatDist;
+import org.naebulae.mc2.vector.McString;
+import org.naebulae.mc2.vector.ShannonSampler;
 import org.naebulae.util.System2;
 
 public class to_generate_string_shannon 

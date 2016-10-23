@@ -44,7 +44,7 @@ public class MixtureModel extends Sampler1970
 	public Object nextSample() 
 	{
 		MixtureComponent pk = nextComponent();
-		return pk.nextSample();
+		return pk.nextSample(nextBaseDouble());
 	}
 
 }

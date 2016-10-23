@@ -97,6 +97,11 @@ public class Joiner
 		return res;
 	}	
 	
+	public String joinArrayDouble(Object args)
+	{
+		return join((double[]) args);
+	}
+	
 	public String join(double... args)
 	{
 		String res = "";

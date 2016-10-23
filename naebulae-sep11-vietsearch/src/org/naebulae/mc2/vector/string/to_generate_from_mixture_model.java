@@ -1,6 +1,10 @@
-package org.naebulae.mc2.vector;
+package org.naebulae.mc2.vector.string;
 
 import java.util.List;
+
+import org.naebulae.mc2.vector.MixtureComponent;
+import org.naebulae.mc2.vector.MixtureModel;
+import org.naebulae.mc2.vector.Sampler1970;
 
 import gapp.xorcos.stat.Meanvar;
 
@@ -12,14 +16,14 @@ public class to_generate_from_mixture_model
 		
 		m.add(0.3, new MixtureComponent() {
 			@Override
-			public Object nextSample() 
+			public Object nextSample(double x) 
 			{
 				return 20 + 10 * Math.random();
 			}});
 		
 		m.add(0.7, new MixtureComponent() {
 			@Override
-			public Object nextSample() 
+			public Object nextSample(double x) 
 			{
 				return 1000 + 10 * Math.random();
 			}});

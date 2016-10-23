@@ -13,4 +13,11 @@ public class List2 {
 		return res;
 	}
 
+	public static<T1> List<T1> cast(List<Object> x, Class<T1> cl)
+	{
+		List<T1> res = new ArrayList<T1>();
+		for(Object xk: x) res.add(cl.cast(xk));
+		return res;
+	}
+
 }
