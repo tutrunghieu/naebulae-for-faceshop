@@ -1,6 +1,7 @@
 package org.naebulae.util;
 
 import java.util.List;
+import java.util.Set;
 
 public class System2
 {
@@ -96,6 +97,11 @@ public class System2
 		}
 				
 		return res;
+	}
+
+	public static double[] doubleArray(double... args)
+	{
+		return args;
 	}
 	
 }

@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import org.naebulae.mc2.vector.table.TypedAction;
+
 //providing categorical, gaussian, uniform
 public class BaseSampler 
 {
@@ -78,6 +80,20 @@ public class BaseSampler
 		return m + s*nextGaussianSample();
 	}
 	
+
+	public<T1> T1 nextCategory(double[] cat, List<T1> sym) 
+	{
+		double r = nextBaseDouble(), s = 0;
+
+		for(int k=0; k<cat.length; k++)
+		{
+			s += cat[k];
+			if(r < s) return sym.get(k);
+		}
+		
+		return null;
+	}
+	
 	public<T1> T1 nextCategory(Map<T1, Double> cat)
 	{
 		double r = nextBaseDouble(), s = 0;
@@ -114,6 +130,7 @@ public class BaseSampler
 	{
 		int r = nextUniformInteger(cat);
 		return cat[r];
-	}	
+	}
+
 		
 }
