@@ -7,6 +7,15 @@ public class McString<T>
 {
 	protected List<T> items = new ArrayList<T>();
 	
+	public McString() 
+	{
+	}
+	
+	public McString(List<T> res) 
+	{
+		items = res;
+	}
+
 	public void add(T s)
 	{
 		items.add(s);

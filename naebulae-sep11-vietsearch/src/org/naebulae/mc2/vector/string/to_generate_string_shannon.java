@@ -1,8 +1,11 @@
 package org.naebulae.mc2.vector.string;
 
+import java.util.Arrays;
+
 import org.naebulae.mc2.vector.CatDist;
 import org.naebulae.mc2.vector.McString;
 import org.naebulae.mc2.vector.ShannonSampler;
+import org.naebulae.util.List2;
 import org.naebulae.util.System2;
 
 public class to_generate_string_shannon 
@@ -29,6 +32,7 @@ public class to_generate_string_shannon
 			System.out.println(vk);
 //		}
 		
+//		System.out.println(List2.tail(Arrays.asList("a", "b", "c", "d"), 2));	
 		System2.theEnd();
 	}
 

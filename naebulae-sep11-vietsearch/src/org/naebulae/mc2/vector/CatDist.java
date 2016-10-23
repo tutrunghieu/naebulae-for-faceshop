@@ -16,4 +16,8 @@ public interface CatDist
 		return res;		
 	}
 
+	public abstract void addCategory(Object obj);
+	
+	public abstract void normalize();
+
 }

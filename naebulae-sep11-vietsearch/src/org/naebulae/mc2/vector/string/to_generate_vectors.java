@@ -12,8 +12,8 @@ public class to_generate_vectors
 	{
 		McVectorGenerator g = new McVectorGenerator();
 		
-		g.add( () -> 100*Math.random() );
-		g.add( () -> 20*Math.random() );
+//		g.add( () -> 100*Math.random() );
+//		g.add( () -> 20*Math.random() );
 		
 		
 		for(int k=0; k<1000; k++)

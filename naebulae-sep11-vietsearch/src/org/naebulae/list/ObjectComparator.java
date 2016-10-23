@@ -1,4 +1,4 @@
-package org.naebulae.mc2.vector;
+package org.naebulae.list;
 
 import java.util.Comparator;
 

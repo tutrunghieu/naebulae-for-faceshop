@@ -13,5 +13,16 @@ public class CatDistArr extends Sampler1970 implements CatDist
 	public Object nextCategory() 
 	{
 		return takeOne(arr);
+	}
+
+	@Override
+	public void addCategory(Object obj) 
+	{		
+	}
+
+	@Override
+	public void normalize() 
+	{
+		
 	}	
 }

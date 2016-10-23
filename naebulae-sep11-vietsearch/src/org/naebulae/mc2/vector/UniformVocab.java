@@ -20,4 +20,16 @@ public class UniformVocab implements CatDist
 		return items.get(k);
 	}
 
+	@Override
+	public void addCategory(Object obj) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void normalize() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
