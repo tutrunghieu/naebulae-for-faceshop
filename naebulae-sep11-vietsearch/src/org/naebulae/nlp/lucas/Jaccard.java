@@ -48,5 +48,19 @@ public class Jaccard {
 		return c/s;
 	}
 
+	public static<T1> double jaccardScore(Map<T1, Double> h, double d) 
+	{
+		double a = 0, b = 0;
+		
+		for(T1 nj: h.keySet())
+		{
+			Double vj = h.get(nj);
+			a += Math.min(vj, d);
+			b += Math.max(vj, d);
+		}
+
+		return a/(b==0 ? 1 : b);
+	}
+
 
 }

@@ -75,6 +75,17 @@ public class BaseSampler
 		return res;
 	}
 
+	public double nextBoxMullerSample() 
+	{
+		double U1 = nextBaseDouble();
+		U1 = Math.sqrt(-2*Math.log(U1));
+		
+		double U2 = nextBaseDouble();
+		U2 = Math.cos(2*Math.PI*U2);
+				
+		return U1 * U2;
+	}
+	
 	public double nextGaussianSample(double m, double s) 
 	{
 		return m + s*nextGaussianSample();

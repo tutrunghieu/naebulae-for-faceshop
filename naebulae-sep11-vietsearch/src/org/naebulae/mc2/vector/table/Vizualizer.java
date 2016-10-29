@@ -6,6 +6,7 @@ import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.util.List;
+import java.util.Map;
 
 import javax.imageio.ImageIO;
 
@@ -55,6 +56,17 @@ public class Vizualizer
 		}
 		
 		return;
+	}
+
+	public static<T1> void printHist(Map<T1, Double> h, double mul) 
+	{
+		for(T1 nj: h.keySet())
+		{
+			double n = h.get(nj)*mul;
+			for(int k=0; k<n; k++) System.out.print('-');
+			System.out.println(" : " + nj + " : " + h.get(nj));
+		}
+		
 	}
 
 }
