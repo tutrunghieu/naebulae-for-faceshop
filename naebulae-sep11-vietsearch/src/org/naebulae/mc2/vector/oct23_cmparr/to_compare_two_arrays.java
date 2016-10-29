@@ -5,7 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import org.naebulae.list.ComparatorListString;
+import org.naebulae.util.ComparatorListString;
 
 public class to_compare_two_arrays 
 {

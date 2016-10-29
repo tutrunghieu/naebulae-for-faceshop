@@ -1,4 +1,4 @@
-package demo.naebulae.mongosearch;
+package units.naebulae.mongosearch;
 
 import org.naebulae.util.mongo.MongoPortal;
 import org.naebulae.util.mongo.MongoUtils;

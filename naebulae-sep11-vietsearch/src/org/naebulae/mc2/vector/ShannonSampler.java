@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
-import org.naebulae.list.ObjectComparator;
 import org.naebulae.util.Joiner;
 import org.naebulae.util.List2;
+import org.naebulae.util.ObjectComparator;
 
 public class ShannonSampler 
 {

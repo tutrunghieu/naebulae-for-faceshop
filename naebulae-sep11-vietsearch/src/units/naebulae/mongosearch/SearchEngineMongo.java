@@ -1,4 +1,4 @@
-package demo.naebulae.mongosearch;
+package units.naebulae.mongosearch;
 
 import java.util.ArrayList;
 import java.util.Collection;

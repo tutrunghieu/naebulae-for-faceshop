@@ -1,4 +1,4 @@
-package demo.naebulae.vietsearch;
+package units.naebulae.vietsearch;
 
 import java.io.PrintWriter;
 import java.util.List;

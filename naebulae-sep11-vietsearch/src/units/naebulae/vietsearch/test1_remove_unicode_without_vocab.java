@@ -1,4 +1,4 @@
-package demo.naebulae.vietsearch;
+package units.naebulae.vietsearch;
 
 import org.naebulae.nlp.vietlang.VietlangUtils;
 

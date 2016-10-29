@@ -1,4 +1,4 @@
-package org.naebulae.list;
+package org.naebulae.util;
 
 public class ComparatorListString extends ComparatorList<String> 
 {

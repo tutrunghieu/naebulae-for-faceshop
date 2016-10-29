@@ -1,4 +1,4 @@
-package org.naebulae.list;
+package org.naebulae.util;
 
 import java.util.Comparator;
 

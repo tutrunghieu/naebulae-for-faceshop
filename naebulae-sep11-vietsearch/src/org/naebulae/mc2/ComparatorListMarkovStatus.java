@@ -1,6 +1,6 @@
 package org.naebulae.mc2;
 
-import org.naebulae.list.ComparatorList;
+import org.naebulae.util.ComparatorList;
 
 public class ComparatorListMarkovStatus extends ComparatorList<MarkovSymbolPdf>
 {
