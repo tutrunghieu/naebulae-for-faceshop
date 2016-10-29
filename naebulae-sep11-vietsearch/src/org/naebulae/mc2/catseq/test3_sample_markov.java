@@ -1,5 +1,9 @@
 package org.naebulae.mc2.catseq;
 
+import org.naebulae.mc2.Catseq;
+import org.naebulae.mc2.MarkovState;
+import org.naebulae.mc2.Sampler;
+import org.naebulae.mc2.SamplerMarkov;
 import org.naebulae.util.Map2;
 import org.naebulae.util.System2;
 

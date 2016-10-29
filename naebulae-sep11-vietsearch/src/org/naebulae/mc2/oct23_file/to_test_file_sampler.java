@@ -1,5 +1,7 @@
 package org.naebulae.mc2.oct23_file;
 
+import org.naebulae.mc2.BaseSampler;
+import org.naebulae.mc2.FileSampler;
 import org.naebulae.util.System2;
 
 public class to_test_file_sampler {

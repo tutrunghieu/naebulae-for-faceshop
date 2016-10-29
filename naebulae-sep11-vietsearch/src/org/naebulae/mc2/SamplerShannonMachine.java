@@ -1,8 +1,6 @@
-package org.naebulae.mc2.catseq;
+package org.naebulae.mc2;
 
 import java.util.Map;
-
-import org.naebulae.mc2.catseq.demo.CorpusUtils;
 
 public class SamplerShannonMachine extends Sampler<Catseq> 
 {

@@ -1,5 +1,8 @@
 package org.naebulae.mc2.catseq;
 
+import org.naebulae.mc2.Catseq;
+import org.naebulae.mc2.SamplerUniformBox;
+
 public class test1_sample_bounding_box {
 
 	public static void main(String[] args)

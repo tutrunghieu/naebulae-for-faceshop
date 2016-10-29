@@ -3,6 +3,8 @@ package org.naebulae.mc2.string;
 import java.util.Arrays;
 import java.util.List;
 
+import org.naebulae.mc2.MarkovSampler;
+import org.naebulae.mc2.MarkovSymbolPdf;
 import org.naebulae.mc2.vector.McString;
 import org.naebulae.util.System2;
 

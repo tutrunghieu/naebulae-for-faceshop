@@ -2,11 +2,10 @@ package org.naebulae.mc2.string;
 
 import java.util.List;
 
+import org.naebulae.mc2.Meanvar;
 import org.naebulae.mc2.vector.MixtureComponent;
 import org.naebulae.mc2.vector.MixtureModel;
 import org.naebulae.mc2.vector.Sampler1970;
-
-import gapp.xorcos.stat.Meanvar;
 
 public class to_generate_from_mixture_model 
 {

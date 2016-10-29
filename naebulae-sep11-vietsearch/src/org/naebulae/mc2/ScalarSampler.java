@@ -1,4 +1,4 @@
-package gapp.xorcos;
+package org.naebulae.mc2;
 
 import java.util.ArrayList;
 import java.util.LinkedHashSet;

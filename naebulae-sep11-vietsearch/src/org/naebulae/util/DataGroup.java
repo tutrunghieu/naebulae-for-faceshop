@@ -3,7 +3,7 @@ package org.naebulae.util;
 import java.util.ArrayList;
 import java.util.List;
 
-import gapp.xorcos.stat.Meanvar;
+import org.naebulae.mc2.Meanvar;
 
 public class DataGroup 
 {

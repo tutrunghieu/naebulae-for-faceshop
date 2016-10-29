@@ -1,4 +1,4 @@
-package org.naebulae.mc2.oct29_test_unif;
+package org.naebulae.mc2;
 
 import java.util.ArrayList;
 import java.util.List;

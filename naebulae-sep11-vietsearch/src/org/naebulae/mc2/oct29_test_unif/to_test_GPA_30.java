@@ -2,7 +2,8 @@ package org.naebulae.mc2.oct29_test_unif;
 
 import java.util.List;
 
-import org.naebulae.mc2.oct23_file.BaseSampler;
+import org.naebulae.mc2.BaseSampler;
+import org.naebulae.mc2.Student30;
 import org.naebulae.util.List2;
 
 public class to_test_GPA_30 

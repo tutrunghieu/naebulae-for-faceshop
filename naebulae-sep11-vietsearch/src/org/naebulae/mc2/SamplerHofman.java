@@ -1,4 +1,4 @@
-package org.naebulae.mc2.catseq;
+package org.naebulae.mc2;
 
 public class SamplerHofman extends Sampler<Catseq> 
 {

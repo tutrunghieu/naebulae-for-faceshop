@@ -1,4 +1,4 @@
-package org.naebulae.mc2.catseq;
+package org.naebulae.mc2;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

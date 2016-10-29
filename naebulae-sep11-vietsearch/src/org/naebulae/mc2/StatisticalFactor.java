@@ -1,4 +1,4 @@
-package gapp.xorcos.stat;
+package org.naebulae.mc2;
 
 import java.util.ArrayList;
 import java.util.List;

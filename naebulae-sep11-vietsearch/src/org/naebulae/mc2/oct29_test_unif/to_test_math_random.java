@@ -3,10 +3,9 @@ package org.naebulae.mc2.oct29_test_unif;
 import java.util.List;
 import java.util.Map;
 
+import org.naebulae.mc2.Meanvar;
 import org.naebulae.util.Jaccard;
 import org.naebulae.util.List2;
-
-import gapp.xorcos.stat.Meanvar;
 
 public class to_test_math_random {
 

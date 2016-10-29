@@ -1,4 +1,4 @@
-package gapp.xorcos.stat;
+package org.naebulae.mc2;
 
 public interface WhereFunc {
 

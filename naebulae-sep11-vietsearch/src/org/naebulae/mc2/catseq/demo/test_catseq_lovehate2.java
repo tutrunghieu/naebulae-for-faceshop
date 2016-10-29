@@ -1,7 +1,7 @@
 package org.naebulae.mc2.catseq.demo;
 
-import org.naebulae.mc2.catseq.Catseq;
-import org.naebulae.mc2.catseq.SamplerShannonMachine2;
+import org.naebulae.mc2.Catseq;
+import org.naebulae.mc2.SamplerShannonMachine2;
 
 public class test_catseq_lovehate2 {
 

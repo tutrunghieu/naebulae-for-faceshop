@@ -3,6 +3,8 @@ package org.naebulae.mc2.oct23_file;
 import java.util.Arrays;
 import java.util.List;
 
+import org.naebulae.mc2.BaseSampler;
+import org.naebulae.mc2.FileSampler;
 import org.naebulae.mc2.vector.table.TypedAction;
 import org.naebulae.util.System2;
 
