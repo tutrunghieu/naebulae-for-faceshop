@@ -5,7 +5,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 
+import org.naebulae.mc2.oct29_test_unif.XorDataRow;
 import org.naebulae.mc2.vector.table.TypedAction;
+import org.naebulae.mc2.vector.table.TypedMapper;
 
 public class List2 {
 
@@ -74,14 +76,42 @@ public class List2 {
 		return res;
 	}
 
-	public static Map<Double, Double> divide(Map<Double, Double> res, int size) 
+	public static<T1> Map<T1, Double> divide(Map<T1, Double> res, int size) 
 	{
-		for(Double vj: res.keySet())
+		for(T1 vj: res.keySet())
 		{
 			res.put(vj, res.get(vj)/size);
 		}		
 		
 		return res;
+	}
+
+	public static<T1> void print(List<T1> items) 
+	{
+		for(T1 ik: items) System.out.println(ik);
+	}
+
+	public static<T1, T2> Map<T2, Double> hist(List<T1> items, TypedMapper<T1, T2> lf)
+	throws Exception
+	{
+		Map<T2, Double> res = new TreeMap<T2, Double>();
+		
+		for(T1 ik: items)
+		{
+			T2 vk = lf.invokeAction(ik);
+			Double ck = res.get(vk);
+			res.put(vk, ck==null ? 1 : ck+1);
+		}		
+		
+		return res;
+	}
+
+	public static<T1, T2> void print(Map<T1, T2> h)
+	{
+		for(T1 nj: h.keySet())
+		{
+			System.out.println(nj + " >> " + h.get(nj));
+		}
 	}
 
 }
