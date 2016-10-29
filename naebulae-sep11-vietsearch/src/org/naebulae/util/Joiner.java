@@ -2,6 +2,7 @@ package org.naebulae.util;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
+import java.util.List;
 import java.util.Map;
 
 public class Joiner 
@@ -113,7 +114,8 @@ public class Joiner
 		}
 		
 		return res;
-	}	
+	}
+
 	
 
 
