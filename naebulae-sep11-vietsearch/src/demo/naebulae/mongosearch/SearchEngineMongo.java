@@ -6,9 +6,9 @@ import java.util.List;
 import java.util.Map;
 
 import org.bson.Document;
-import org.naebulae.nlp.lucas.Jaccard;
 import org.naebulae.nlp.lucas.SearchEngine;
 import org.naebulae.nlp.vietlang.VietlangUtils;
+import org.naebulae.util.Jaccard;
 import org.naebulae.util.mongo.MongoPortal;
 
 public class SearchEngineMongo<T> extends SearchEngine<Document> 

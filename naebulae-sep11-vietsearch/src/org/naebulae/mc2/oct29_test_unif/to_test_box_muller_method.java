@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.naebulae.mc2.oct23_file.BaseSampler;
-import org.naebulae.mc2.vector.table.Vizualizer;
+import org.naebulae.mc2.vector.table.Visualizer;
 import org.naebulae.util.List2;
 
 public class to_test_box_muller_method {
@@ -22,7 +22,7 @@ public class to_test_box_muller_method {
 		List2.divide(h, items.size());
 		System.out.println(h);
 		
-		Vizualizer.printHist(h, 200);
+		Visualizer.printHist(h, 200);
 	}
 
 }

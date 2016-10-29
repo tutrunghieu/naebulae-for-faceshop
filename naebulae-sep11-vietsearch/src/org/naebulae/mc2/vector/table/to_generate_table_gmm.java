@@ -31,7 +31,7 @@ public class to_generate_table_gmm
 			System.out.println(Joiner.start(" ").join(xk) );
 		}
 		
-		Vizualizer.figure(150, 150, g -> Vizualizer.drawList(g, x1));
+		Visualizer.figure(150, 150, g -> Visualizer.drawList(g, x1));
 		System2.theEnd();
 }
 

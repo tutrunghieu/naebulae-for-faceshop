@@ -1,4 +1,4 @@
-package org.naebulae.nlp.lucas;
+package org.naebulae.util;
 
 import java.util.Map;
 import java.util.Set;

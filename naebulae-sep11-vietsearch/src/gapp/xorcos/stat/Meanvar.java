@@ -5,6 +5,20 @@ import java.util.List;
 
 public class Meanvar {
 
+	public static double max(List<Double> x) 
+	{
+		double s = -Double.MAX_VALUE;
+		for(Double xk: x) s = Math.max(s, xk);
+		return s;
+	}
+	
+	public static double min(List<Double> x) 
+	{
+		double s = Double.MAX_VALUE;
+		for(Double xk: x) s = Math.min(s, xk);
+		return s;
+	}
+	
 	public static double average(List<Double> x) 
 	{
 		double s = 0;

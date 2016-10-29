@@ -114,4 +114,22 @@ public class List2 {
 		}
 	}
 
+	public static<T1, T2> Map<T2, DataGroup> group(List<T1> items, TypedMapper<T1, T2> lf)
+	throws Exception
+	{
+		Map<T2, DataGroup> res = new TreeMap<T2, DataGroup>();
+		
+		for(T1 ik: items)
+		{
+			T2 vk = lf.invokeAction(ik);
+			
+			DataGroup ck = res.get(vk);
+			if(ck==null) res.put(vk, ck = new DataGroup());
+			
+			ck.add(ik);
+		}		
+		
+		return res;
+	}
+
 }

@@ -4,6 +4,7 @@ import java.util.Map;
 
 import org.bson.Document;
 import org.naebulae.nlp.vietlang.VietlangUtils;
+import org.naebulae.util.Jaccard;
 
 public class ScoringFuncStringDoc implements ScoringFunc 
 {

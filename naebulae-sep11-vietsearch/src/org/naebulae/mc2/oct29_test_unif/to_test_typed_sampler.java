@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.naebulae.mc2.oct23_file.BaseSampler;
-import org.naebulae.nlp.lucas.Jaccard;
+import org.naebulae.util.Jaccard;
 import org.naebulae.util.List2;
 
 public class to_test_typed_sampler 

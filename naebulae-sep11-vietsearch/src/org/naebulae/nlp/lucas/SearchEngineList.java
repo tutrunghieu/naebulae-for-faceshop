@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.naebulae.nlp.vietlang.VietlangUtils;
+import org.naebulae.util.Jaccard;
 
 public class SearchEngineList<T> extends SearchEngine<String> {
 

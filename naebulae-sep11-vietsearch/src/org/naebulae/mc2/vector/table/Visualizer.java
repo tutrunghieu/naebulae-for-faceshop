@@ -10,7 +10,9 @@ import java.util.Map;
 
 import javax.imageio.ImageIO;
 
-public class Vizualizer 
+import org.naebulae.util.DataGroup;
+
+public class Visualizer 
 {
 
 	public static BufferedImage newImage(int W, int H) 
@@ -65,6 +67,17 @@ public class Vizualizer
 			double n = h.get(nj)*mul;
 			for(int k=0; k<n; k++) System.out.print('-');
 			System.out.println(" : " + nj + " : " + h.get(nj));
+		}
+		
+	}
+
+	public static void printDataGroups(Map<Object, DataGroup> h, double total, double mul)
+	{
+		for(Object nj: h.keySet())
+		{
+			double n = mul * h.get(nj).size() / total;
+			for(int k=0; k<n; k++) System.out.print('-');
+			System.out.println(" : " + h.get(nj));
 		}
 		
 	}
