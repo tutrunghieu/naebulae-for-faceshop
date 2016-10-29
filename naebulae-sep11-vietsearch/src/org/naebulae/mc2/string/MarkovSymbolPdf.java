@@ -1,4 +1,4 @@
-package org.naebulae.mc2.vector.string;
+package org.naebulae.mc2.string;
 
 import java.util.Map;
 import java.util.TreeMap;

@@ -1,4 +1,4 @@
-package org.naebulae.mc2.vector.string;
+package org.naebulae.mc2.string;
 
 import org.naebulae.mc2.vector.HofmannSampler;
 import org.naebulae.mc2.vector.McString;
