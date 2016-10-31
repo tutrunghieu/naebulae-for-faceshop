@@ -17,6 +17,7 @@ public class to_test_box_muller_method {
 		List<Double> items = List2.sample(Double.class, 90000, 
 				x -> x.add(b.nextBoxMullerSample()) );
 		
+		
 		int n = 15;		
 		Map<Double, Double> h = List2.hist(items, -3, 3, n);
 		List2.divide(h, items.size());
