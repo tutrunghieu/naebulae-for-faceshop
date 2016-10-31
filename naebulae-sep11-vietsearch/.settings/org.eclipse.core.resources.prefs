@@ -1,7 +1,0 @@
-eclipse.preferences.version=1
-encoding//src/units/naebulae/mongosearch/test2_search_for_names.java=UTF-8
-encoding//src/units/naebulae/mongosearch/test3_simple_filtering.java=UTF-8
-encoding//src/units/naebulae/vietsearch/test1_remove_unicode_without_vocab.java=UTF-8
-encoding//src/units/naebulae/vietsearch/test2_remove_unicode_with_vocab.java=UTF-8
-encoding//src/units/naebulae/vietsearch/test3_detone_truyen_kieu.java=UTF-8
-encoding//src/units/naebulae/vietsearch/test4_search_with_unknown_chars.java=UTF-8
